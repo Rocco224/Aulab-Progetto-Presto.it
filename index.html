@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white px-4 shadow fixed-top">
+            <div class="container-fluid">
+
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <img class="me-2" src="/public/img/logo.png" alt="logo dell'azienda">
+                    <h2 class="mb-0 text-primary">Presto.it</h2>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsible-navbar" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsible-navbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./annunci.html">Annunci</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade p-0" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="https://fastly.picsum.photos/id/655/2000/1125.jpg?hmac=Uwp6LjnVtMcRT0nyC8GmWiNp7GFP02ipyf5uiePLE6Q"
+                                    class="" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://fastly.picsum.photos/id/157/5000/3914.jpg?hmac=A23PziOOpi_DIdiPRI30m9_1A8keOtMF3a6Vb-D7dRA"
+                                    class="" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="https://fastly.picsum.photos/id/250/4928/3264.jpg?hmac=4oIwzXlpK4KU3wySTnATICCa4H6xwbSGifrxv7GafWU"
+                                    class="" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container py-5 bg-white">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="display-5 text-center">Le nostre <span class="fw-bold text-primary">categorie</span>
+                        </h2>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas fuga
+                            ea
+                            cum
+                            nobis ipsam vitae adipisci assumenda, exercitationem laboriosam suscipit, laborum, ratione
+                            fugit.
+                            Odit explicabo a laboriosam! Quisquam, neque eum!</p>
+                    </div>
+                </div>
+
+                <div class="row" id="categoryContainer">
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="formContainer" class="container my-5 d-flex justify-content-center">
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-12 col-lg-6">
+                        <img src="https://fastly.picsum.photos/id/192/2352/2352.jpg?hmac=jN5UExysObV7_BrOYLdxoDKzm_c_lRM6QkaInKT_1Go"
+                            alt="">
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex flex-column text-lg-start">
+
+                        <h3 class="display-5 text-center text-lg-start mt-3">Lavora <span
+                                class="fw-bold text-primary">con
+                                noi</span></h3>
+                        <p class="text-center text-lg-start lead">Invia la tua candidatura per far parte del team di
+                            Presto
+                        </p>
+
+                        <form id="workWithUsForm" class="needs-validation" novalidate>
+
+                            <div class="form-floating mt-3">
+                                <input type="text" class="form-control" id="name" placeholder="Nome e Cognome" required>
+                                <label for="name">Nome e Cognome</label>
+                                <div class="valid-feedback">
+                                    Grazie!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Devi inserire un nome e cognome valido!
+                                </div>
+                            </div>
+
+                            <div class="form-floating mt-3">
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                <label for="email">Email</label>
+                                <div class="valid-feedback">
+                                    Grazie!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Devi inserire un' email valida!
+                                </div>
+                            </div>
+
+                            <div class="form-floating mt-3">
+                                <textarea class="form-control" id="textarea"
+                                    placeholder="Inserisci una breve presentazione" required></textarea>
+                                <label for="textarea">Inserisci una breve presentazione</label>
+                                <div class="valid-feedback">
+                                    Grazie!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Per favore scrivi qualcosa!
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary mt-4">Invia la tua candidatura</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <footer>
+                <div class="container">
+                    <div class="row p-5 d-flex justify-content-between">
+
+                        <div id="companyInfo" class="col-12 col-md-7 text-center text-md-start">
+                            <h1 class="text-pastello mb-2">Presto.it</h1>
+                            <ul class="d-flex flex-column no-dot p-0 text-accent">
+                                <li>Modena</li>
+                                <li>Via Brombeis n° 123</li>
+                                <li>Codice fiscale: RSSRRT80A01D229D</li>
+                                <li>Partita IVA: 16526340973</li>
+                            </ul>
+                        </div>
+
+                        <div id="companySocial" class="col-12 col-md-2">
+                            <h4 class="text-pastello text-center text-md-start mb-2">Seguici su:</h1>
+                                <ul
+                                    class="d-flex flex-row no-dot p-0 text-accent justify-content-center justify-content-md-start">
+                                    <li class="pe-2"><a href="https://it-it.facebook.com/"><i
+                                                class="bi bi-facebook"></i></a></li>
+                                    <li class="pe-2"><a href="https://www.instagram.com/"><i
+                                                class="bi bi-instagram"></i></a></li>
+                                    <li class="pe-2"><a href="https://twitter.com/?lang=it"><i
+                                                class="bi bi-twitter"></i></a></li>
+                                    <li class="pe-2"><a
+                                            href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fit-IT&lang=en&enter_method=mandatory"><i
+                                                class="bi bi-tiktok"></i></a></li>
+                                </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="/public/js/index.js"></script>
+</body>
+
+</html>
